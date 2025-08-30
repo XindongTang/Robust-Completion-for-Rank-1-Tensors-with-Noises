@@ -1,5 +1,5 @@
 clc; clear all;
-
+%%%% example 5.6
 %% Input parameters
 % n - dimension for the tensor (n1=n2=n3=n)
 % den - the density of observed entries (den = |Omega|/(n1n2n3))
@@ -34,6 +34,7 @@ three_or_more = sum(nonzero_counts >= 3) / num_experiments * 100;
 fprintf('Percentage of rank-1 G[y^*]: %.1f%%\n', one_nonzero);
 fprintf('Percentage of rank-2 G[y^*]: %.1f%%\n', two_nonzero);
 fprintf('Percentage of rank>=3 G[y^*]: %.1f%%\n', three_or_more);
+
 
 
 
